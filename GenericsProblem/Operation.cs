@@ -17,5 +17,14 @@ namespace GenericsProblem
             if (c >= a && c >= b)
                 Console.WriteLine("C is Maximum");
         }
+        public void FindMaxFloat(float a, float b, float c)
+        {
+            if (a >= b && a >= c)
+                Console.WriteLine("A is Maximum");
+            if (b >= c && b >= c)
+                Console.WriteLine("B is Maximum");
+            if (c >= a && c >= b)
+                Console.WriteLine("C is Maximum");
+        }
     }
 }
