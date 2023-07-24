@@ -6,27 +6,9 @@ using System.Threading.Tasks;
 
 namespace GenericsProblem
 {
-    internal class Operation
+    internal class Operation<T> where T :IComparable
     {
-        public void FindMaxInteger(int a, int b, int c)
-        {
-            if (a >= b && a >= c)
-                Console.WriteLine("A is Maximum");
-            if (b >= c && b >= c)
-                Console.WriteLine("B is Maximum");
-            if (c >= a && c >= b)
-                Console.WriteLine("C is Maximum");
-        }
-        public void FindMaxFloat(float a, float b, float c)
-        {
-            if (a >= b && a >= c)
-                Console.WriteLine("A is Maximum");
-            if (b >= c && b >= c)
-                Console.WriteLine("B is Maximum");
-            if (c >= a && c >= b)
-                Console.WriteLine("C is Maximum");
-        }
-        public void FindMaxString(string a, string b, string c)
+        public void FindMax (T a,T b,T c)
         {
             if (a.CompareTo(b) >= 0 && a.CompareTo(c) >= 0)
                 Console.WriteLine("A is Maximum");

@@ -6,10 +6,10 @@ namespace GenericsProblem
         static void Main()
         {
             Console.WriteLine("Welcome to the Generics Problem");
-            Operation operation = new Operation();
-            operation.FindMaxInteger(7, 8, 3);
-            operation.FindMaxFloat(1.8f, 1.6f, 1.7f);
-            operation.FindMaxString("a", "b", "c");
+            Operation<int> operation = new Operation<int>();
+            operation.FindMax(7,8,3);
+          //  operation.FindMax<float>(1.8f, 1.6f, 1.7f);
+          //  operation.FindMax<string>("a", "b", "c");
 
         }
     }
